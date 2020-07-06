@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Основной конейтенер для контента */
 
 .container {
@@ -18,17 +24,17 @@
   justify-content: space-between;
 }
 
-.header__left-content{
+.header__left-content {
   display: flex;
   align-items: center;
 }
 
-.header__logo{
+.header__logo {
   display: flex;
   align-items: center;
 }
 
-.header__logo-img{
+.header__logo-img {
   margin-right: 30px;
   width: 40px;
   height: 40px;
@@ -112,5 +118,100 @@
   font-family: Lato, sans-serif;
 }
 
+.button {
+  width: 270px;
+  height: 60px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  text-align: center;
+  padding: 19px 18px;
+  background: #005FA3;
+  font-family: Lato, sans-serif;
+}
+
+/* slider */
+
+.slider {
+
+  background: url("img/Rectangle.jpg");
+}
+
+.slider__container {
+  position: relative;
+  height: 670px;
+  padding-top: 170px;
+}
+
+.slider__title {
+  color: white;
+  font-size: 48px;
+  margin: 0 0 80px;
+  line-height: 66px;
+  font-weight: bold;
+  font-family: Merriweather, serif;
+}
 
 
+.slider__pagination {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 114px;
+}
+
+.slider__pagination-item {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.slider__pagination-item._active {
+  background: #ffffff;
+}
+
+.slider__pagination-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.slider__nav {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 114px;
+}
+
+.slider__nav-item._left {
+  width: 60px;
+  height: 60px;
+  background: rgba(225, 225, 225, 0.2);
+}
+
+.slider__nav-item._right._active {
+  width: 60px;
+  height: 60px;
+  background: rgba(225, 225, 225, 0.4);
+
+}
+
+.slider__nav-item._left:before {
+  content: '';
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: url(img/back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__nav-item._right._active:before{
+  content: '';
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: url(img/vector.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
