@@ -257,7 +257,7 @@
 
 .our-servises-item:before {
   content: '';
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -271,12 +271,123 @@
 
 .name {
   bottom: 45px;
-  left		: 45px;
-  width		: 100%;
+  left: 45px;
+  width: 100%;
   color: white;
   font-size: 24px;
   line-height: 30px;
   font-weight: 900;
-  position	: absolute;
+  position: absolute;
   font-family: Lato, sans-serif;
 }
+
+/* about-us */
+
+.about-us__container {
+  height: 844px;
+  position: relative;
+  padding-top: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us__description {
+  color: #bdbdbd;
+  font-size: 24px;
+  margin: 0 0 40px;
+  line-height: 33px;
+  font-weight: 900;
+  font-family: Lato, sans-serif;
+}
+
+.about-us__title {
+  color: #333333;
+  font-size: 48px;
+  margin: 0 0 60px;
+  line-height: 69px;
+  font-weight: 900;
+  font-family: Merriweather, serif;
+}
+
+.company-name {
+  color: #005FA3;
+}
+
+.about-us__position {
+  color: #000000;
+  max-width: 443px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: Lato, sans-serif;
+}
+
+
+.achievements {
+  width: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.achievements__item {
+  width: 255px;
+  height: 255px;
+  background: #EBEBEB;
+  margin: 0 30px 30px 0;
+  padding: 30px 40px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.achievements__item:last-child,
+.achievements__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.achievements__item:last-child,
+.achievements__item:nth-last-child(2):not(:nth-child(2n)) {
+  margin-bottom: 0;
+}
+
+.achievements__count {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 55px;
+  letter-spacing: 0.1em;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.achievements__title {
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: auto;
+}
+
+.achievements__link {
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #005FA3;
+}
+
+
+.achievements__item:hover {
+  color: white;
+  background: #005FA3;
+}
+
+.achievements__item:hover .achievements__link {
+  color: white;
+
+}
+
+
+
