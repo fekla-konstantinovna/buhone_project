@@ -133,7 +133,6 @@
 /* slider */
 
 .slider {
-
   background: url("img/Rectangle.jpg");
 }
 
@@ -153,63 +152,85 @@
 }
 
 
-.slider__pagination {
-  display: flex;
+.slider__slider-pagination {
   position: absolute;
   left: 0;
   bottom: 114px;
 }
 
-.slider__pagination-item {
+
+.slider-pagination {
+  display: flex;
+}
+
+.slider-pagination__item {
   width: 10px;
   height: 10px;
+  bottom: 100px;
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.4);
 }
 
-.slider__pagination-item._active {
+.slider-pagination._secondary .slider-pagination__item {
+  background: rgba(0, 95, 163, 0.4);
+}
+
+.slider-pagination__item._active {
   background: #ffffff;
 }
 
-.slider__pagination-item:not(:last-child) {
+.slider-pagination._secondary .slider-pagination__item._active {
+  background: #005FA3;
+}
+
+.slider-pagination__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.slider__nav {
-  display: flex;
-  position: absolute;
+
+.slider__slider-nav {
   right: 0;
   bottom: 114px;
+  position: absolute;
 }
 
-.slider__nav-item._left {
+.slider-nav {
+  display: flex;
+}
+
+.slider-nav__item {
   width: 60px;
   height: 60px;
   background: rgba(225, 225, 225, 0.2);
 }
 
-.slider__nav-item._right._active {
-  width: 60px;
-  height: 60px;
-  background: rgba(225, 225, 225, 0.4);
-
+.slider-nav__item::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
-.slider__nav-item._left:before {
-  content: '';
-  display: flex;
-  height: 100%;
-  width: 100%;
+.slider-nav__item:hover {
+  background: rgba(225, 225, 225, 0.4);
+}
+
+.slider-nav__item._left:before {
   background: url(img/back.png) no-repeat center;
 }
 
-.slider__nav-item._right._active:before {
-  content: '';
-  display: flex;
-  height: 100%;
-  width: 100%;
+.slider-nav__item._right:before {
   background: url(img/vector.png) no-repeat center;
 }
+
+.slider-nav._secondary .slider-nav__item {
+  background: rgba(0, 95, 163, 0.2);;
+}
+
+.slider-nav._secondary .slider-nav__item:hover {
+  background: #005FA3;
+}
+
 
 /* servises */
 
@@ -390,4 +411,53 @@
 }
 
 
+/* our-clients */
 
+.our-clients {
+  background: #EBEBEB;
+
+}
+
+.our-clients__container {
+  height: 630px;
+  position: relative;
+  padding-top: 100px;
+}
+
+.our-clients__description {
+  color: #bdbdbd;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 33px;
+  font-family: Lato, sans-serif;
+}
+
+.our-clients__title {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: Merriweather, serif;
+}
+
+.our-clients__companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.our-clients__company {
+  width: 255px;
+  height: 130px;
+  background: url("img/microsoft.png") no-repeat center;
+}
+
+.our-clients__slider-pagination {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+}
+
+.our-clients__slider-nav {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
