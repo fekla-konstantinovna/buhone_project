@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@700;900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link rel="stylesheet" href="style.css">
@@ -30,10 +30,10 @@
           <div class="header__right-content">
             <!--START header__links-->
             <div class="header__links">
-              <div class="header__links-item header__links-item_phone">8 (111) 222-33-44</div>
-              <div class="header__links-item header__links-item_time">Пн-Пт 10:00-18:00</div>
-              <div class="header__links-item header__links-item_mail">order@buhone.ru</div>
-              <div class="header__links-item header__links-item_address">Невский пр. 130</div>
+              <a href="tel:81112223344" class="contact _phone">8 (111) 222-33-44</a>
+              <span class="contact _time">Пн-Пт 10:00-18:00</span>
+              <a href="mailto:order@buhone.ru" class="contact _mail">order@buhone.ru</a>
+              <span class="contact _address">Невский пр. 130</span>
             </div>
             <!--END header__links-->
 
@@ -69,7 +69,6 @@
             <div class="slider-nav__item _left"></div>
             <div class="slider-nav__item _right"></div>
           </div>
-
         </div>
       </section>
 
@@ -184,7 +183,6 @@
           </div>
         </div>
 
-
         <div class="slider-pagination comments__slider-pagination _secondary">
           <div class="slider-pagination__item"></div>
           <div class="slider-pagination__item"></div>
@@ -197,8 +195,53 @@
           <div class="slider-nav__item _right"></div>
         </div>
       </div>
-      </div>
     </section>
 
+    <section class="communication">
+      <div class="container communication__container">
+
+        <div class="communication__content">
+          <div class="communication__title">Связь с нами</div>
+          <span class="communication__description">
+            У вас остались вопросы? Напишите нам - мы ответим в ближайшее время
+          </span>
+
+          <div class="communication__links">
+            <a href="tel:81112223344" class="contact _phone _secondary">8 (111) 222-33-44</a>
+            <a href="mailto:order@buhone.ru" class="contact _mail _secondary">order@buhone.ru</a>
+          </div>
+        </div>
+
+        <div class="communication__content">
+          <form class="communication__form" action="#">
+            <div class="communication__inputs">
+
+              <div class="input communication__input">
+                <label class="input__wrapper">
+                  <span class="label">имя</span>
+                  <input name="name" type="text" class="input__field" placeholder="Иван">
+                </label>
+              </div>
+
+              <div class="input communication__input">
+                <label class="input__wrapper">
+                  <span class="label">Фамилия</span>
+                  <input name="lastName" type="text" class="input__field" placeholder="Иванов">
+                </label>
+              </div>
+            </div>
+
+            <div class="textarea communication__textarea">
+              <label class="textarea__wrapper">
+                <span class="label">Сообщение</span>
+                <textarea name="message" class="textarea__field" placeholder="Ваше сообщение"></textarea>
+              </label>
+            </div>
+
+            <button type="submit" class="button">Отправить сообщение</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

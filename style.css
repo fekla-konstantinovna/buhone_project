@@ -61,46 +61,6 @@
   justify-content: space-between;
 }
 
-.header__links-item {
-  color: #000000;
-  font-size: 13px;
-  line-height: 17px;
-  padding-left: 32px;
-  position: relative;
-  font-family: Lato, sans-serif;
-}
-
-.header__links-item::before {
-  content: '';
-  top: 50%;
-  left: 0;
-  position: absolute;
-  transform: translate(0, -50%);
-}
-
-.header__links-item_phone::before {
-  background: url("img/phone.png") no-repeat center;
-  width: 10px;
-  height: 17px;
-}
-
-.header__links-item_time::before {
-  background: url("img/time.png") no-repeat center;
-  width: 17px;
-  height: 17px;
-}
-
-.header__links-item_mail::before {
-  background: url("img/mail.png") no-repeat center;
-  width: 23px;
-  height: 17px;
-}
-
-.header__links-item_address::before {
-  background: url("img/address.png") no-repeat center;
-  width: 12px;
-  height: 17px;
-}
 
 .header__nav {
   display: flex;
@@ -116,6 +76,73 @@
   text-transform: uppercase;
   text-decoration: none;
   font-family: Lato, sans-serif;
+}
+
+.contact {
+  color: #000000;
+  font-size: 13px;
+  line-height: 17px;
+  padding-left: 32px;
+  text-decoration: none;
+  position: relative;
+  font-family: Lato, sans-serif;
+}
+
+.contact::before {
+  content: '';
+  top: 50%;
+  left: 0;
+  position: absolute;
+  transform: translate(0, -50%);
+}
+
+.contact._phone::before {
+  background: url("img/phone.png") no-repeat center;
+  width: 10px;
+  height: 17px;
+}
+
+.contact._time::before {
+  background: url("img/time.png") no-repeat center;
+  width: 17px;
+  height: 17px;
+}
+
+.contact._mail::before {
+  background: url("img/mail.png") no-repeat center;
+  width: 23px;
+  height: 17px;
+}
+
+.contact._address::before {
+  background: url("img/address.png") no-repeat center;
+  width: 12px;
+  height: 17px;
+}
+
+.contact._secondary {
+  color: white;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 29px;
+  font-family: Lato, sans-serif;
+}
+
+.contact._secondary._phone::before {
+  background: url("img/phone white.png") no-repeat center;
+  width: 18px;
+  height: 30px;
+}
+
+.contact._secondary._mail {
+  position: relative;
+  padding-left: 54px;
+}
+
+.contact._secondary._mail::before {
+  background: url("img/mail2.png") no-repeat center;
+  width: 40px;
+  height: 30px;
 }
 
 .button {
@@ -546,4 +573,141 @@
   position: absolute;
   right: 0;
   bottom: 100px;
+}
+
+/* communication */
+
+.communication {
+  background: url("img/Rectangle.jpg");
+}
+
+.communication__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 122px;
+  padding-bottom: 140px;
+  position: relative;
+}
+
+.communication__content {
+  width: calc(50% - 15px);
+}
+
+.communication__title {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 48px;
+  margin: -4px 0 46px;
+  font-family: Merriweather, serif;
+}
+
+.communication__description {
+  display: block;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  margin: 0 0 80px;
+  font-family: Lato, sans-serif;
+}
+
+.communication__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.communication__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.communication__inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.communication__input {
+  width: calc(50% - 15px) !important;
+}
+
+.communication__textarea {
+  margin-bottom: 50px;
+}
+
+.label {
+  width: 100%;
+  color: #FFFFFF;
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: capitalize;
+  font-family: Lato, sans-serif;
+}
+
+.input {
+  width: 100%;
+}
+
+.input__wrapper {
+  width: 100%;
+  display: block;
+}
+
+.input__field {
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 21px;
+  padding: 15px 0 14px;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  font-family: Lato, sans-serif;
+}
+
+.input__field::placeholder {
+  color: #BDBDBD;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 21px;
+  font-family: Lato, serif;
+}
+
+.textarea {
+  width: 100%;
+}
+
+.textarea__wrapper {
+  width: 100%;
+  display: block;
+}
+
+.textarea__field {
+  resize: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 120px;
+  color: #FFFFFF;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 21px;
+  padding: 15px 0 14px;
+  background: transparent;
+  font-family: Lato, sans-serif;
+  border-bottom: 1px solid #fff;
+}
+
+.textarea__field::placeholder {
+  color: #BDBDBD;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  font-family: Lato, sans-serif;
 }
